@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* خلفية عامة */
+body {
+  font-family: 'Cairo', sans-serif;
+  background: radial-gradient(circle at center, #6b0000, #4b0000);
+  min-height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f9f9f9;
+}
+
+/* الهيدر */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* العنوان الرئيسي */
+.welcome-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFE4E1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+/* الموقع */
+.location {
+  font-size: 1rem;
+  color: #FFDADA;
+  background: rgba(139, 0, 0, 0.3);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* الحاوية العامة */
+.brands-container {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* كل عنصر */
+.brand {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 320px;
+  backdrop-filter: blur(8px);
+}
+
+.brand:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(139, 0, 0, 0.4);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* الصورة */
+.brand img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+
+.brand:hover img {
+  transform: scale(1.05);
+}
+
+/* العناوين */
+.brand-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FFDADA;
+  margin-bottom: 8px;
+}
+
+.brand-desc {
+  font-size: 1rem;
+  color: #FFEEEE;
+  line-height: 1.5;
+}
+
+/* كرت Milk Plus */
+.milk-plus {
+  background: linear-gradient(135deg, #7A0000, #B22222);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.milk-plus .brand-title,
+.milk-plus .brand-desc {
+  color: #FFFFFF;
+}
+
+/* كرت Milk */
+.milk {
+  background: linear-gradient(135deg, #8B0000, #A52A2A);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.milk .brand-title,
+.milk .brand-desc {
+  color: #FFFFFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcome-title { font-size: 1.5rem; }
+  .location { font-size: 0.9rem; padding: 6px 12px; }
+  .brands-container { margin-top: 15px; padding: 0 5px; }
+  .brands { gap: 15px; }
+  .brand { padding: 18px; max-width: 100%; }
+  .brand img { width: 80px; height: 80px; }
+  .brand-title { font-size: 1.2rem; }
+  .brand-desc { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .welcome-title { font-size: 1.3rem; }
+  .location { font-size: 0.85rem; }
+  .brand { padding: 15px; }
+  .brand img { width: 70px; height: 70px; }
+  .brand-title { font-size: 1.1rem; }
+  .brand-desc { font-size: 0.9rem; }
+}
