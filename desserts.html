@@ -3,144 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milk - منيو المشروبات | Drinks Menu</title>
-  <link rel="stylesheet" href="drinks.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Milk - منيو الحلويات</title>
+  <link rel="stylesheet" href="desserts_style.css">
+ 
+<link rel="stylesheet" href="style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 20px;
+      background-color: #fff9f3;
+      color: #333;
+    }
+    .navbar {
+      background-color: #ffdddd;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #d23f57;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    header {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      color: #d23f57;
+    }
+    .section-links {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5c3d2e;
+      font-weight: bold;
+      border: 1px solid #d23f57;
+      padding: 5px 10px;
+      border-radius: 6px;
+      background-color: #ffe5e5;
+    }
+    h2 {
+      color: #b3364d;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html">🏠 الصفحة الرئيسية | Home</a> |
-    <a href="desserts.html">🍰 الحلويات | Desserts</a> |
-    <a href="drinks.html">🥤 المشروبات | Drinks</a>
+    <a href="index.html">🏠 الصفحة الرئيسية (Home)</a> |
+    
+   
+    <a href="drinks.html">🥤 المشروبات (Drinks)</a> |
+    <a href="desserts.html">🍰 الحلويات (Desserts)</a>
   </nav>
 
-  <div class="section-links">
-    <a href="#cold">🥤 المشروبات الباردة | Cold Beverages</a>
-    <a href="#coffee">☕ القهوة | Coffee</a>
-    <a href="#hot">🍵 المشروبات الساخنة | Hot Drinks</a>
-    <a href="#milkshake">🥤 ميلك شيك | Milkshake</a>
-    <a href="#yogurt">🧁 يوچرت | Yogurt</a>
-    <a href="#smoothies">🍹 سموذي | Smoothies</a>
-    <a href="#juices">🧃 العصائر الطبيعية | Fresh Juices</a>
-    <a href="#cocktails">🧉 الكوكتيل | Cocktails</a>
-    <a href="#mojito">🧪 موهيتو | Mojito</a>
-    <a href="#protein">💪 بروتين | Protein</a>
-  </div>
+  <header>🍰 منيو الحلويات - Milk</header>
 
-  <header>
-    <h1>🥤 منيو المشروبات - Milk | Drinks Menu</h1>
-  </header>
+   
 
-  <section id="cold">
-    <h2>🥤 المشروبات الباردة | Cold Beverages</h2>
-    <ul>
-      <li>ايس كوفي | Iced Coffee – S: 8 &#8362; | L: 10 &#8362;</li>
-      <li>ايس امريكانو | Iced Americano – 10 &#8362;</li>
-      <li>ايس لاتيه | Iced Latte –  10 &#8362; </li>
-      <li>ايس لاتيه طعم | Flavored Iced Latte –  13 &#8362; </li>
-      <li>ايس موكا | Iced Mocha –  10 &#8362; </li>
-      <li>سبانش لاتيه | Spanish Latte – 15 &#8362;</li>
-    </ul>
-  </section>
+  <h2 id="waffle">🧇 الوافل والكريب (Waffle & Crepe)</h2>
+  <ul>
+    <li>وافل كلاسيك – 15 ₪ (Classic Waffle)</li>
+    <li>وافل ميلك – 20 ₪ (mlik Waffle)</li>
+    <li>كريب فواكه – 20 ₪ (Fruit Crepe)</li>
+    <li>كريب كلاسيك – 15 ₪ (Classic Crepe)</li>
+    <li>كريب ميلك – 18 ₪ (Milk Crepe)</li>
+    <li>كريب كندر / نوتيلا / بيستاشيو / أوريو  – 18 ₪ (Kinder/Nutella/Pistachio/Oreo)</li>
+    <li>فوتوشيني كريب – 18 ₪ (Fettuccine Crepe)</li>
+  </ul>
 
-  <section id="coffee">
-    <h2>☕ القهوة | Coffee</h2>
-    <ul>
-      <li>اسبريسو | Espresso – S: 5 &#8362; | L: 7 &#8362;</li>
-      <li>أمريكانو | Americano – S: 5 &#8362; | L: 7 &#8362;</li>
-      <li>تركية | Turkish Coffee – 3 &#8362;</li>
-      <li>عربية | Arabic Coffee – 4 &#8362;</li>
-    </ul>
-  </section>
+  <h2 id="fashafeesh">🍟 فشافيش (Fashafeesh)</h2>
+  <ul>
+    <li>S (10 حبات / pcs) – 10 ₪</li>
+    <li>M (15 حبة / pcs) – 15 ₪</li>
+    <li>XL (24 حبة / pcs) – 20 ₪</li>
+    <li>XXL (30 حبة / pcs) – 25 ₪</li>
+  </ul>
 
-  <section id="hot">
-    <h2>🍵 المشروبات الساخنة | Hot Drinks</h2>
-    <ul>
-      <li>كابتشينو | Cappuccino – S: 7 &#8362; | L: 10 &#8362;</li>
-      <li>بندق | Hazelnut – S: 7 &#8362; | L: 10 &#8362;</li>
-      <li>فرنش فانيلا | French Vanilla – S: 7 &#8362; | L: 10 &#8362;</li>
-      <li>هوت شوكليت | Hot Chocolate – S: 7 &#8362; | L: 10 &#8362;</li>
-      <li>شاي لاتيه | Chai Latte – S: 7 &#8362; | L: 10 &#8362;</li>
-      <li>موكا | Mocha – 10 &#8362;</li>
-     <li>هوت لوتس | Hot Lotus –  10 &#8362; </li>
-      <li>أعشاب | Herbal – 3 &#8362;</li>
-    </ul>
-  </section>
+  <h2 id="pancake">🥞 ميني بان كيك (Mini Pancake)</h2>
+  <ul>
+    <li>كاسة ميني بان كيك – 15 ₪ (Mini Pancake Cup)</li>
+  </ul>
 
-  <section id="milkshake">
-    <h2>🥤 ميلك شيك | Milkshake</h2>
-    <ul>
-      <li>بستاشيو | Pistachio – S: 15 &#8362; | L: 18 &#8362;</li>
-<li>نوتيلا | Nutella – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>بلو أنجل | Blue Angel – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>كورنيتو | Cornetto – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>ببلي جم | Bubble Gum – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>لوتس | Lotus – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>يمبا | Bamaba – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>سيريلاك | Cerelac – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>مكس بيري | Mixed Berry – S: 10 &#8362; | L: 12 &#8362;</li>
-<li>بلوبري | Blueberry – S: 10 &#8362; | L: 12 &#8362;</li>
-<li>فرولة | Strawberry – S: 10 &#8362; | L: 12 &#8362;</li>
-<li>فانيلا | Vanilla – S: 10 &#8362; | L: 12 &#8362;</li>
-<li>كندر | Kinder – S: 12 &#8362; | L: 15 &#8362;</li>
-<li>مارس | Mars – S: 10 &#8362; | L: 12 &#8362;</li>
-<li>سنيكرز | Snickers – S: 10 &#8362; | L: 12 &#8362;</li>
-<li>اوريو | Oreo – S: 10 &#8362; | L: 12 &#8362;</li>
+  <h2 id="box">🎁 بوكس السعادة (Happiness Box)</h2>
+  <ul>
+    <li>صغير – 45 ₪ (Small)</li>
+    <li>كبير – 75 ₪ (Large)</li>
+  </ul>
 
-    </ul>
-  </section>
-
-  <section id="yogurt">
-    <h2>🧁 يوچرت | Yogurt</h2>
-    <ul>
-      <li>نكهات: ليتشي، خوخ، كيوي، بطيخ، مكس بيري، بلوبري | Flavors: Pistachio, Peach, Kiwi, Watermelon, Mixed Berries, Blueberry – 15 &#8362;</li>
-    </ul>
-  </section>
-
-  <section id="smoothies">
-    <h2>🍹 سموذي | Smoothies</h2>
-    <ul>
-      <li>سموذي طعم | Flavored Smoothie – S: 10 &#8362; | L: 12 &#8362;</li>
-      <li>سموذي بسفلورا | Biscoffra Smoothie – S: 8 &#8362; | L: 10 &#8362;</li>
-    </ul>
-  </section>
-
-  <section id="juices">
-    <h2>🧃 العصائر الطبيعية | Fresh Juices</h2>
-    <ul>
-      <li>برتقال | Orange </li>
-      <li>جزر | Carrot </li>
-      <li>ليمون ونعنع | Lemon Mint</li>
-      <li>رمان | Pomegranate – : 15 &#8362;</li>
-      <li>مانجا | Mango –  : 12 &#8362;</li>
-    </ul>
-  </section>
-
-  <section id="cocktails">
-    <h2>🧉 الكوكتيل | Cocktails</h2>
-    <ul>
-      <li>كوكتيل سادة | Classic Cocktail – S: 8 &#8362; | L: 10 &#8362;</li>
-      <li>كوكتيل بوظة + مكسرات | Ice Cream + Nuts – S: 10 &#8362; | L: 12 &#8362;</li>
-      <li>كوكتيل ميلك | Milk Cocktail – XL: 20 &#8362;</li>
-      <li>موز وحليب | Banana Milk – S: 8 &#8362; | L: 10 &#8362;</li>
-    </ul>
-  </section>
-
-  <section id="mojito">
-    <h2>🧪 موهيتو | Mojito</h2>
-<ul>
-  <li><strong>أكثر من 20 طعم</strong> | <em>Flavors</em> – L: 10 &#8362; | XL: 15 &#8362;</li>
-  <li><strong>إكسترا شوت</strong> | <em>Extra Shot</em> – +3 &#8362;</li>
+  <h2 id="arabic">🍮 حلويات عربية (Arabic Sweets)</h2>
+ <ul>
+    <li>كنافة ميلك – 18 ₪ (Milk Kunafa)</li>
+    <li>قشطوشة – 18 ₪ (Qashtousha)</li>
+   <li>عش بلبل (10 حبات) – 20 ₪ (Bulbul's Nest - 10 pcs)</li>
 </ul>
 
-  </section>
 
-  <section id="protein">
-    <h2>💪 بروتين | Protein</h2>
-    <ul>
-<li>مشروب متكامل للاعبين (ماس / واي) | Full Protein Shake (Mass/Whey) – S: 12 &#8362; | L: 15 &#8362;</li>
-    </ul>
-  </section>
+
+ <h2 id="cakes">🍰 كيكات و حلى (Cakes & Desserts)</h2>
+<ul>
+    <li>تريليشيا – 12 ₪ (Tres Leches)</li>
+    <li>سان سبستيان – 12 ₪ (San Sebastian)</li>
+    <li>كب كيك – 5 ₪ (Cupcake)</li>
+    <li>تشيز كيك – 5 ₪ (Cheesecake)</li>
+    <li>دوناتس – 5 ₪ (Donuts)</li>
+</ul>
+
 </body>
 </html>
